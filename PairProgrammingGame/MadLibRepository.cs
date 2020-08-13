@@ -8,6 +8,9 @@ namespace PairProgrammingGame
 {
     public class MadLibRepository
     {
+        public string Title { get; set; }
+        public string Animal { get; set; }
+        public string BodyPart { get; set; }
         public string NumOne { get; set; }
         public string NumTwo { get; set; }
         public string PluralNounOne { get; set; }
@@ -18,12 +21,18 @@ namespace PairProgrammingGame
         public string NounTwo { get; set; }
         public string NounThree { get; set; }
         public string NounFour { get; set; }
+        public string NounFive { get; set; }
+        public string NounSix { get; set; }
+        public string Nationality { get; set; }
         public string AdjectiveOne { get; set; }
         public string AdjectiveTwo { get; set; }
         public string AdjectiveThree { get; set; }
         public string AdjectiveFour { get; set; }
         public string AdjectiveFive { get; set; }
         public string AdjectiveSix { get; set; }
+        public string FoodOne { get; set; }
+        public string FoodTwo { get; set; }
+        public string Liquid { get; set; }
         public string OccNumOne { get; set; }
         public string OccNumTwo { get; set; }
         public string VerbOne { get; set; }
@@ -32,8 +41,10 @@ namespace PairProgrammingGame
         public string VerbFour { get; set; }
         public string ActionVerbOne { get; set; }
         public string ActionVerbTwo { get; set; }
+        public string Person { get; set; }
         public string PlaceOne { get; set; }
         public string PlaceTwo { get; set; }
+        public string Shapes { get; set; }
         public string Time { get; set; }
 
         public string MadLibOne()
@@ -60,6 +71,39 @@ namespace PairProgrammingGame
                 $"On the {AdjectiveOne} trip to {PlaceOne}, my {AdjectiveTwo} friend and I decided to invent a game. Since this would be a rather {AdjectiveThree} trip, it would need to be a game with {PluralNounOne} and {PluralNounTwo}. Using our {NounOne} to {VerbOne}, we tried to get the {NounTwo} next to us to play too, but they just {VerbTwo}ed at us and {ActionVerbOne} a way. After a few rounds, we thought the game could use some {PluralNounThree} so we turned on the {NounThree} and started {VerbThree} to the {NounFour} that came on. This lasted for {Time} before I got {AdjectiveFour} and decided to {ActionVerbTwo}. I'll never {VerbFour} that trip, it was the {AdjectiveFive} road trip of my {PossessiveNounOne}.";
 
                 return madLibTwo;
+        }
+
+        public string MadLibThree()
+        {
+            string madLibThree = $"PIZZA PIZZA\n" +
+                $"Pizza was invented by a {AdjectiveOne} {Nationality} chef named {Person}. To make pizza, you need to take a lump of {NounOne}, and make a thin, round {AdjectiveTwo} {NounTwo}. Then you cover it with {AdjectiveThree} sauce, {AdjectiveFour} cheese, and fresh chopped {PluralNounOne}. Next you have to bake it in a very hot {NounThree}. When it is done, cut it into {NumOne} {Shapes}. Some kids like {FoodOne} pizza the best, but my favorite is the {FoodTwo} pizza. If I could, I would eat pizza {NumTwo} times a day!";
+
+            return madLibThree;
+        }
+
+        public string MadLibFour()
+        {
+            string madLibFour = $"FIRST DATES\n" +
+                $"The best first dates involve grand romatic {PluralNounOne} like these: \n" +
+                $"\t Charter a private {NounOne} and fly to (the) {PlaceOne}, also known as the {NounTwo} of Love, for a/an {NumOne}-course dinner followed by a moonlit ride in a/an {NounThree} along the canals.\n" +
+                $"\t Prepare a/an {AdjectiveOne} gourmet picnic complete with a/an ${NumTwo} bottle of {Liquid} and a quartet serenading you with {AdjectiveTwo} songs.\n" +
+                $"\t Rent a space on the Jumbo-{NounFour} during a/an {NounFive}-ball game and post a super {AdjectiveThree} message like \"Glad we're {VerbOne} together here today!\" \n" +
+                $"\t Send a bouquet of long-stemmed red {PluralNounTwo} before and after the date, and for good measure, send one to the {AdjectiveFour} restaurant where you're wining and {VerbTwo} your date.\n" +
+                $"\t Take a nighttime hot-air {NounSix} ride to check out the stars.";
+
+            return madLibFour;
+        }
+
+        public string MadLibFive()
+        {
+            string madLibFive = $"GOLDEN GIRLS - OUT ON THE LANAI\n" +
+                $"You would think that the Girls' lanai would be the perfect place to relax and clear your {BodyPart}, but it seems that something {AdjectiveOne} is always happening out there! Like when\n" +
+                $"\t Blanche hires a stripper dressed a a/an {OccNumOne} to {VerbOne} at Dorothy's bridal shower.\n" +
+                $"\t A man in a/an {Animal} costume parachutes down, thinking he is at the {FoodOne} Bowl.\n" +
+                $"\t Rose sees a/an {NounOne} in the night sky and thinks it's a UFO!\n" +
+                $"\t Dorothy and Miles get swept away in the {AdjectiveTwo} moonlight and share a forbidden {NounTwo}.";
+
+            return madLibFive;
         }
     }
 }
