@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PairProgrammingGame.MadLibs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,147 +11,79 @@ namespace PairProgrammingGame
     {
         private bool _isRunning = true;
         private readonly MadLibRepository _madLibRepo = new MadLibRepository();
+        private readonly President _idealPresident = new President();
+        private readonly Roadtrip _roadtrip = new Roadtrip();
+        private readonly Pizza _pizzaPizza = new Pizza();
+        private readonly Dates _firstDates = new Dates();
+
         public void Start()
         {
-            OpeningGreeting();
+            RunMenu();
+        }
+
+        private void RunMenu()
+        {
+            while (_isRunning)
+            {
+                string userInput = GetMenuSelection();
+                OpenMenuItem(userInput);
+            }
+
+        }
+
+        public string GetMenuSelection()
+        {
+            Console.Clear();
+            Console.WriteLine(
+                       "Welcome to MadLib Mania!!!\n" +
+                       "Select from the menu below:\n" +
+                       "1. My Ideal President.\n" +
+                       "2. Road Trip with my Friend.\n" +
+                       "3. COMMING SOON.\n" +
+                       "4. Exit Game.");
+
+            string userInput = Console.ReadLine();
+            return userInput;
+        }
+
+        private void OpenMenuItem(string userInput)
+        {
+            Console.Clear();
+            switch (userInput)
+            {
+                case "1":
+                    _idealPresident.MyIdealPresident();
+                    GetMenuSelection();
+                    break;
+                case "2":
+                    _roadtrip.RoadTripWithFriend();
+                    GetMenuSelection();
+                    break;
+                case "3":
+                    _pizzaPizza.PizzaPizza();
+                    GetMenuSelection();
+                    break;
+                case "4":
+                    _firstDates.FirstDates();
+                    GetMenuSelection();
+                    break;
+            }
+            return;
+
         }
         private void OpeningGreeting()
         {
-            Console.WriteLine("Enter any number: ");
-            _madLibRepo.NumOne = Console.ReadLine();
-            Console.WriteLine("That's great. Now enter an Adjective");
-            _madLibRepo.AdjectiveOne = Console.ReadLine().ToUpper();
-            Console.WriteLine("Perfect. Let me add it into my madlib");
-            Console.WriteLine($"{ _madLibRepo.MadLibOne()}");
-            Console.ReadLine();
+            Console.WriteLine("  __  __           _ _     _ _     
+                                |  \/  | __ _  __ | | | (_) | __
+                                | |\/| |/ _` |/ _` | |   | | '_ \ 
+                                | |  | | (_ | | (_ | | | ___ | | | _) | 
+                                | _ |  | _ |\__, _ |\__, _ | _____ | _ | _.__ /
+                                |  \/  | __ _ _ __(_) __ _
+                                | |\/| |/ _` | '_ \| |/ _` |      
+                                | |  | | (_ | | | | | | (_ | |
+                              | _ |  | _ |\__, _ | _ | | _ | _ |\__, _ | ");
         }
 
-        private void DisplayMadLibByTitle()
-        {
-
-        }
-
-        private void MadLibs()
-        {
-            Console.WriteLine("Enter an adjective: ");
-            _madLibRepo.AdjectiveOne = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter a place: ");
-            _madLibRepo.PlaceOne = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another adjective: ");
-            _madLibRepo.AdjectiveTwo = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another adjective: ");
-            _madLibRepo.AdjectiveThree = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter a plural noun: ");
-            _madLibRepo.PluralNounOne = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another plural noun: ");
-            _madLibRepo.PluralNounTwo = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter a noun: ");
-            _madLibRepo.NounOne = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter a verb: ");
-            _madLibRepo.VerbOne = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another noun: ");
-            _madLibRepo.NounTwo = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another verb: ");
-            _madLibRepo.VerbTwo = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter an action verb: ");
-            _madLibRepo.ActionVerbOne = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another plural noun: ");
-            _madLibRepo.PluralNounThree = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another noun: ");
-            _madLibRepo.NounThree = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter a verb that ends with -ing: ");
-            _madLibRepo.VerbThree = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another noun: ");
-            _madLibRepo.NounFour = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter a time: ");
-            _madLibRepo.Time = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another adjective: ");
-            _madLibRepo.AdjectiveFour = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another action verb: ");
-            _madLibRepo.ActionVerbTwo = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another verb: ");
-            _madLibRepo.VerbFour = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another adjective: ");
-            _madLibRepo.AdjectiveFive = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter a possessive noun: ");
-            _madLibRepo.PossessiveNounOne = Console.ReadLine().ToUpper();
-            Console.WriteLine("Ready to read your MadLib?");
-
-            Console.WriteLine($"{_madLibRepo.MadLibTwo()}");
-
-            Console.WriteLine("Enter an adjective: ");
-            _madLibRepo.AdjectiveOne = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter a nationality: ");
-            _madLibRepo.Nationality = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter a person: ");
-            _madLibRepo.Person = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter a noun: ");
-            _madLibRepo.NounOne = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another adjective: ");
-            _madLibRepo.AdjectiveTwo = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another noun: ");
-            _madLibRepo.NounTwo = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another adjective: ");
-            _madLibRepo.AdjectiveThree = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another adjective: ");
-            _madLibRepo.AdjectiveFour = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter a plural noun: ");
-            _madLibRepo.PluralNounOne = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another noun: ");
-            _madLibRepo.NounThree = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter a number: ");
-            _madLibRepo.NumOne = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter a shape: ");
-            _madLibRepo.Shapes = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter a food: ");
-            _madLibRepo.FoodOne = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another food: ");
-            _madLibRepo.FoodTwo = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another number: ");
-            _madLibRepo.NumTwo = Console.ReadLine().ToUpper();
-
-            Console.WriteLine($"{_madLibRepo.MadLibThree()}");
-
-            Console.WriteLine("Enter a plural noun: ");
-            _madLibRepo.PluralNounOne = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter a noun: ");
-            _madLibRepo.NounOne = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter a place: ");
-            _madLibRepo.PlaceOne = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another noun: ");
-            _madLibRepo.NounTwo = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter a number: ");
-            _madLibRepo.NumOne = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another noun: ");
-            _madLibRepo.NounThree = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter an adjective: ");
-            _madLibRepo.AdjectiveOne = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another number: ");
-            _madLibRepo.NumTwo = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter a liquid: ");
-            _madLibRepo.Liquid = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another adjective: ");
-            _madLibRepo.AdjectiveTwo = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another noun: ");
-            _madLibRepo.NounFour = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another noun: ");
-            _madLibRepo.NounFive = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another adjective: ");
-            _madLibRepo.AdjectiveThree = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter a verb ending in -ing: ");
-            _madLibRepo.VerbOne = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another plural noun: ");
-            _madLibRepo.PluralNounTwo = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another adjective: ");
-            _madLibRepo.AdjectiveFour = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another verb ending in -ing: ");
-            _madLibRepo.VerbTwo = Console.ReadLine().ToUpper();
-            Console.WriteLine("Enter another noun: ");
-            _madLibRepo.NounSix = Console.ReadLine().ToUpper();
-
-            Console.WriteLine($"{_madLibRepo.MadLibFour()}");
-
-
-        }
+        
     }
 }

@@ -30,6 +30,7 @@ namespace PairProgrammingGame
         public string AdjectiveFour { get; set; }
         public string AdjectiveFive { get; set; }
         public string AdjectiveSix { get; set; }
+        public string AdjectiveSeven { get; set; }
         public string FoodOne { get; set; }
         public string FoodTwo { get; set; }
         public string Liquid { get; set; }
