@@ -12,7 +12,9 @@ namespace PairProgrammingGame.MadLibs
 
         public void MyIdealPresident()
         {
-
+            Console.WriteLine("I would love to share with you what I think makes an ideal president!\n" +
+                "Before we get started, let's get some information!");
+            Console.WriteLine();
             Console.Write("Enter any number: ");
             Console.ForegroundColor = ConsoleColor.Red;
             _madLibRepo.NumOne = Console.ReadLine();

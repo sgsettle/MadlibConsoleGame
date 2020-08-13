@@ -25,7 +25,7 @@ namespace PairProgrammingGame
             RunMenu();
         }
 
-        private void RunMenu()
+        public void RunMenu()
         {
             while (_isRunning)
             {
