@@ -43,7 +43,16 @@ namespace PairProgrammingGame.MadLibs
             Console.WriteLine("Enter another number: ");
             _madLibRepo.NumTwo = Console.ReadLine().ToUpper();
 
-            Console.WriteLine($"{_madLibRepo.MadLibThree()}");
+            Console.WriteLine();
+            Console.WriteLine("Perfect. Let me add it into my MadLib Mania Machine...");
+            Console.WriteLine("DONE! Press any key to see your results...");
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine($"{ _madLibRepo.MadLibThree()}");
+            Console.WriteLine();
+            Console.WriteLine("\t\t\tLETS DO SOME MORE!");
+            Console.WriteLine("\t\t\tPress Any Key To Continue");
+            Console.ReadKey();
         }
     }
 }

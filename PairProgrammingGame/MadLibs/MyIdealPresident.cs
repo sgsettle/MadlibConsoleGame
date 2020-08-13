@@ -10,9 +10,9 @@ namespace PairProgrammingGame.MadLibs
     {
         private readonly MadLibRepository _madLibRepo = new MadLibRepository();
 
-
         public void MyIdealPresident()
         {
+
             Console.Write("Enter any number: ");
             _madLibRepo.NumOne = Console.ReadLine();
 
@@ -46,7 +46,7 @@ namespace PairProgrammingGame.MadLibs
             Console.Write("WOW! You are on a roll. I need a few more from you. Give me a Verb: ");
             _madLibRepo.VerbTwo = Console.ReadLine().ToUpper();
 
-            Console.Write("Now enter a Plurl Noun. For example cars, dishes, mice, or geese: ");
+            Console.Write("Now enter a Plural Noun. For example cars, dishes, mice, or geese: ");
             _madLibRepo.PluralNounOne = Console.ReadLine().ToUpper();
 
             Console.Write("Give me another one of those regular Nouns: ");

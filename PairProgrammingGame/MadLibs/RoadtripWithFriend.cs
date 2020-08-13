@@ -12,6 +12,10 @@ namespace PairProgrammingGame.MadLibs
 
         public void RoadTripWithFriend()
         {
+            Console.WriteLine("I hope you are ready to go on a fun wild adventure!\n" +
+                "I need to get some information from you before\n" +
+                " we can go on our trip. HERE WE GO!");
+            Console.WriteLine();
             Console.WriteLine("Enter an adjective: ");
             _madLibRepo.AdjectiveOne = Console.ReadLine().ToUpper();
             Console.WriteLine("Enter a place: ");
@@ -56,7 +60,16 @@ namespace PairProgrammingGame.MadLibs
             _madLibRepo.PossessiveNounOne = Console.ReadLine().ToUpper();
             Console.WriteLine("Ready to read your MadLib?");
 
-            Console.WriteLine($"{_madLibRepo.MadLibTwo()}");
+            Console.WriteLine();
+            Console.WriteLine("Perfect. Let me add it into my MadLib Mania Machine...");
+            Console.WriteLine("DONE! Press any key to see your results...");
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine($"{ _madLibRepo.MadLibTwo()}");
+            Console.WriteLine();
+            Console.WriteLine("\t\t\tLETS DO SOME MORE!");
+            Console.WriteLine("\t\t\tPress Any Key To Continue");
+            Console.ReadKey();
         }
     }
 }

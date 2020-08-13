@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,11 +12,14 @@ namespace PairProgrammingGame
         public string Title { get; set; }
         public string Animal { get; set; }
         public string BodyPart { get; set; }
+        public string Color { get; set; }
         public string NumOne { get; set; }
         public string NumTwo { get; set; }
         public string PluralNounOne { get; set; }
         public string PluralNounTwo { get; set; }
         public string PluralNounThree { get; set; }
+        public string PluralNounFour { get; set; }
+        public string PluralNounFive { get; set; }
         public string PossessiveNounOne { get; set; }
         public string NounOne { get; set; }
         public string NounTwo { get; set; }
@@ -67,18 +71,49 @@ namespace PairProgrammingGame
 
         public string MadLibTwo()
         {
-            string madLibTwo = $"ROAD TRIP WITH MY FRIEND\n" +
-                $"\n" +
-                $"On the {AdjectiveOne} trip to {PlaceOne}, my {AdjectiveTwo} friend and I decided to invent a game. Since this would be a rather {AdjectiveThree} trip, it would need to be a game with {PluralNounOne} and {PluralNounTwo}. Using our {NounOne} to {VerbOne}, we tried to get the {NounTwo} next to us to play too, but they just {VerbTwo}ed at us and {ActionVerbOne} a way. After a few rounds, we thought the game could use some {PluralNounThree} so we turned on the {NounThree} and started {VerbThree} to the {NounFour} that came on. This lasted for {Time} before I got {AdjectiveFour} and decided to {ActionVerbTwo}. I'll never {VerbFour} that trip, it was the {AdjectiveFive} road trip of my {PossessiveNounOne}.";
+            string madLibTwo = $"\n" +
+                 $"\n" +
+                 $"\n" +
+                 $"\t\t\tROAD TRIP WITH MY FRIEND\n" +
+                 $"\n" +
+                 $"On the {AdjectiveOne} trip to {PlaceOne}, my {AdjectiveTwo} friend\n" +
+                 $" and I decided to invent a game. Since this would be a rather \n" +
+                 $"{AdjectiveThree} trip, it would need to be a game with \n" +
+                 $"{PluralNounOne} and {PluralNounTwo}. Using our {NounOne} to \n" +
+                 $"{VerbOne}, we tried to get the {NounTwo} next to us to play\n" +
+                 $" too, but they just {VerbTwo}ed at us and {ActionVerbOne} a \n" +
+                 $"way. After a few rounds, we thought the game could use some\n" +
+                 $" {PluralNounThree} so we turned on the {NounThree} and started\n" +
+                 $" {VerbThree} to the {NounFour} that came on. This lasted for\n" +
+                 $" {Time} before I got {AdjectiveFour} and decided to {ActionVerbTwo}.\n" +
+                 $" I'll never {VerbFour} that trip, it was the {AdjectiveFive}\n" +
+                 $" road trip of my {PossessiveNounOne}.\n" +
+                 $"\n" +
+                 $"\n" +
+                 $"\t\t\tNICE JOB!";
 
-                return madLibTwo;
+            return madLibTwo;
         }
 
         public string MadLibThree()
         {
-            string madLibThree = $"PIZZA PIZZA\n" +
-                $"Pizza was invented by a {AdjectiveOne} {Nationality} chef named {Person}. To make pizza, you need to take a lump of {NounOne}, and make a thin, round {AdjectiveTwo} {NounTwo}. Then you cover it with {AdjectiveThree} sauce, {AdjectiveFour} cheese, and fresh chopped {PluralNounOne}. Next you have to bake it in a very hot {NounThree}. When it is done, cut it into {NumOne} {Shapes}. Some kids like {FoodOne} pizza the best, but my favorite is the {FoodTwo} pizza. If I could, I would eat pizza {NumTwo} times a day!";
-
+            string madLibThree = $"\n" +
+                $"\n" +
+                $"\n" +
+                $"\t\t\tPIZZA PIZZA\n" +
+                $"\n" +
+                $"Pizza was invented by a {AdjectiveOne} {Nationality} chef named\n" +
+                $" {Person}. To make pizza, you need to take a lump of {NounOne},\n" +
+                $" and make a thin, round {AdjectiveTwo} {NounTwo}. Then you cover\n" +
+                $" it with {AdjectiveThree} sauce, {AdjectiveFour} cheese, and fresh\n" +
+                $" chopped {PluralNounOne}. Next you have to bake it in a very hot\n" +
+                $" {NounThree}. When it is done, cut it into {NumOne} {Shapes}.\n" +
+                $" Some kids like {FoodOne} pizza the best, but my favorite is the\n" +
+                $" {FoodTwo} pizza. If I could, I would eat pizza {NumTwo} times a day!\n" +
+                $"\n" +
+                $"\n" +
+                $"\t\t\tNICE JOB!"
+                ;
             return madLibThree;
         }
 
@@ -97,12 +132,8 @@ namespace PairProgrammingGame
 
         public string MadLibFive()
         {
-            string madLibFive = $"GOLDEN GIRLS - OUT ON THE LANAI\n" +
-                $"You would think that the Girls' lanai would be the perfect place to relax and clear your {BodyPart}, but it seems that something {AdjectiveOne} is always happening out there! Like when\n" +
-                $"\t Blanche hires a stripper dressed a a/an {OccNumOne} to {VerbOne} at Dorothy's bridal shower.\n" +
-                $"\t A man in a/an {Animal} costume parachutes down, thinking he is at the {FoodOne} Bowl.\n" +
-                $"\t Rose sees a/an {NounOne} in the night sky and thinks it's a UFO!\n" +
-                $"\t Dorothy and Miles get swept away in the {AdjectiveTwo} moonlight and share a forbidden {NounTwo}.";
+            string madLibFive = $"WHAT HAPPENS WHEN A UNICORN POOPS?\n" +
+                $"Unicorns aren't like other {PluralNounOne}; they're {AdjectiveOne}. They look like {PluralNounTwo}, with {PluralNounThree} for feet and a/an {AdjectiveTwo} mane of hair. But unicorns are {Color} and have a {AdjectiveThree} {NounOne} on their heads. Some {PluralNounFour} don't believe unicorns are {AdjectiveFour} but I believe in them. I would love to {VerbOne} a unicorn faraway {PluralNounFive}. One thing I've always {VerbTwo} about is whether unicorns {VerbThree} rainbows, or is their {NounTwo} {AdjectiveFive} like any other animal's?";
 
             return madLibFive;
         }
