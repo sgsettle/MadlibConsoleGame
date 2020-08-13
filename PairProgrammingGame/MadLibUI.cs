@@ -24,8 +24,7 @@ namespace PairProgrammingGame
             OpeningGreeting();
             RunMenu();
         }
-
-        public void RunMenu()
+    public void RunMenu()
         {
             while (_isRunning)
             {
@@ -35,7 +34,7 @@ namespace PairProgrammingGame
 
         }
 
-        public string GetMenuSelection()
+        private string GetMenuSelection()
         {
             Console.Clear();
             Console.WriteLine(
@@ -60,27 +59,27 @@ namespace PairProgrammingGame
             {
                 case "1":
                     _instructions.RunMadLibOne();
-                    GetMenuSelection();
+                    // GetMenuSelection();
                     break;
                 case "2":
                     _idealPresident.MyIdealPresident();
-                    GetMenuSelection();
+                    // GetMenuSelection();
                     break;
                 case "3":
                     _roadtrip.RoadTripWithFriend();
-                    GetMenuSelection();
+                   // GetMenuSelection();
                     break;
                 case "4":
                     _pizzaPizza.PizzaPizza();
-                    GetMenuSelection();
+                   // GetMenuSelection();
                     break;
                 case "5":
                     _firstDates.FirstDates();
-                    GetMenuSelection();
+                    //GetMenuSelection();
                     break;
                 case "6":
                     _unicorns.UnicornPoops();
-                    GetMenuSelection();
+                    //GetMenuSelection();
                     break;
                 case "7":
                     _isRunning = false;

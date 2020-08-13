@@ -100,8 +100,8 @@ namespace PairProgrammingGame.MadLibs
                     break;
                 case "2":
                     _returnToMainMenu = false;
-                    // var madLibUI = new MadLibUI();
-                    // madLibUI.RunMenu();
+                    var madLibUI = new MadLibUI();
+                    madLibUI.RunMenu();
                     break;
             }
             return;
