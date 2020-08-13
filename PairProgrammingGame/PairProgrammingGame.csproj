@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="MadLibRepository.cs" />
     <Compile Include="MadLibs\FirstDates.cs" />
+    <Compile Include="MadLibs\Instructions.cs" />
     <Compile Include="MadLibs\MyIdealPresident.cs" />
     <Compile Include="MadLibs\PizzaPizza.cs" />
     <Compile Include="MadLibs\RoadtripWithFriend.cs" />

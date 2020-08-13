@@ -10,6 +10,7 @@ namespace PairProgrammingGame.MadLibs
     {
         private readonly MadLibRepository _madLibRepo = new MadLibRepository();
         private bool _returnToMainMenu = true;
+
         public void RunMadLibOne()
         {
             while (_returnToMainMenu)
@@ -91,7 +92,7 @@ namespace PairProgrammingGame.MadLibs
                     Console.WriteLine("DONE! Press any key to see your results...");
                     Console.ReadKey();
                     Console.Clear();
-                    Console.WriteLine($"{ _madLibRepository.MadLibOne()}");
+                    Console.WriteLine($"{ _madLibRepo.MadLibOne()}");
                     Console.WriteLine();
                     Console.WriteLine("\t\t\tLETS DO SOME MORE!");
                     Console.WriteLine("\t\t\tPress Any Key To Continue");
@@ -99,6 +100,8 @@ namespace PairProgrammingGame.MadLibs
                     break;
                 case "2":
                     _returnToMainMenu = false;
+                    var madLibUI = new MadLibUI();
+                    madLibUI.GetMenuSelection();
                     break;
             }
             return;

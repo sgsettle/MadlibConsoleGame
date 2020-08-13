@@ -52,6 +52,7 @@ namespace PairProgrammingGame
         public string Shapes { get; set; }
         public string Time { get; set; }
 
+
         public string MadLibOne()
         {
             string madLibOne = $"MY IDEAL PRESIDENT\n" +
@@ -112,29 +113,56 @@ namespace PairProgrammingGame
                 $" {FoodTwo} pizza. If I could, I would eat pizza {NumTwo} times a day!\n" +
                 $"\n" +
                 $"\n" +
-                $"\t\t\tNICE JOB!"
-                ;
+                $"\t\t\tNICE JOB!";
+
             return madLibThree;
         }
 
         public string MadLibFour()
         {
-            string madLibFour = $"FIRST DATES\n" +
-                $"The best first dates involve grand romatic {PluralNounOne} like these: \n" +
-                $"\t Charter a private {NounOne} and fly to (the) {PlaceOne}, also known as the {NounTwo} of Love, for a/an {NumOne}-course dinner followed by a moonlit ride in a/an {NounThree} along the canals.\n" +
-                $"\t Prepare a/an {AdjectiveOne} gourmet picnic complete with a/an ${NumTwo} bottle of {Liquid} and a quartet serenading you with {AdjectiveTwo} songs.\n" +
-                $"\t Rent a space on the Jumbo-{NounFour} during a/an {NounFive}-ball game and post a super {AdjectiveThree} message like \"Glad we're {VerbOne} together here today!\" \n" +
-                $"\t Send a bouquet of long-stemmed red {PluralNounTwo} before and after the date, and for good measure, send one to the {AdjectiveFour} restaurant where you're wining and {VerbTwo} your date.\n" +
-                $"\t Take a nighttime hot-air {NounSix} ride to check out the stars.";
+            string madLibFour = $"\n" +
+                $"\n" +
+                $"\n" +
+                $"\t\t\tFIRST DATES\n" +
+                $"\n" +
+                $"The best first dates involve grand romatic {PluralNounOne} like these:\n" +
+                $"Charter a private {NounOne} and fly to (the) {PlaceOne}, also known as\n" +
+                $"the {NounTwo} of Love, for a/an {NumOne}-course dinner followed by a \n" +
+                $"moonlit ride in a/an {NounThree} along the canals. Prepare a/an\n" +
+                $"{AdjectiveOne} gourmet picnic complete with a/an ${NumTwo} bottle of\n" +
+                $"{Liquid} and a quartet serenading you with {AdjectiveTwo} songs.\n" +
+                $"Rent a space on the Jumbo-{NounFour} during a/an {NounFive}-ball game\n" +
+                $"and post a super {AdjectiveThree} message like Glad we're {VerbOne}\n" +
+                $"together here today!Send a bouquet of long-stemmed red {PluralNounTwo}\n" +
+                $"before and after the date, and for good measure, send one to the\n" +
+                $"{AdjectiveFour} restaurant where you're wining and {VerbTwo} your date.\n" +
+                $"Take a nighttime hot-air {NounSix} ride to check out the stars.\n" +
+                $"\n" +
+                $"\n" +
+                $"\t\t\tNICE JOB!";
 
             return madLibFour;
         }
 
         public string MadLibFive()
         {
-            string madLibFive = $"WHAT HAPPENS WHEN A UNICORN POOPS?\n" +
-                $"Unicorns aren't like other {PluralNounOne}; they're {AdjectiveOne}. They look like {PluralNounTwo}, with {PluralNounThree} for feet and a/an {AdjectiveTwo} mane of hair. But unicorns are {Color} and have a {AdjectiveThree} {NounOne} on their heads. Some {PluralNounFour} don't believe unicorns are {AdjectiveFour} but I believe in them. I would love to {VerbOne} a unicorn faraway {PluralNounFive}. One thing I've always {VerbTwo} about is whether unicorns {VerbThree} rainbows, or is their {NounTwo} {AdjectiveFive} like any other animal's?";
-
+            string madLibFive = $"\n" +
+                $"\n" +
+                $"\n" +
+                $"\t\t\tWHAT HAPPENS WHEN A UNICORN POOPS?\n" +
+                $"\n" +
+                $"Unicorns aren't like other {PluralNounOne}; they're {AdjectiveOne}.\n" +
+                $"They look like {PluralNounTwo}, with {PluralNounThree} for feet and\n" +
+                $"a/an {AdjectiveTwo} mane of hair. But unicorns are {Color} and have a\n" +
+                $"{AdjectiveThree} {NounOne} on their heads. Some {PluralNounFour}\n" +
+                $"don't believe unicorns are {AdjectiveFour} but I believe in them.\n" +
+                $"I would love to {VerbOne} a unicorn faraway {PluralNounFive}.\n" +
+                $"One thing I've always {VerbTwo} about is whether unicorns\n" +
+                $"{VerbThree} rainbows, or is their {NounTwo} {AdjectiveFive}\n" +
+                $"like any other animal's?\n" +
+                $"\n" +
+                $"\n" +
+                $"\t\t\tNICE JOB!";
             return madLibFive;
         }
     }

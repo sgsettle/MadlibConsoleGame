@@ -41,7 +41,7 @@ namespace PairProgrammingGame
             Console.WriteLine(
                        "Welcome to MadLib Mania!!!\n" +
                        "Select from the menu below:\n" +
-                       "1. Beginner? Start Here!" +
+                       "1. Beginner? Start Here!\n" +
                        "2. My Ideal President\n" +
                        "3. Road Trip with my Friend\n" +
                        "4. Pizza Pizza\n" +
@@ -96,11 +96,13 @@ namespace PairProgrammingGame
         }
         private void OpeningGreeting()
         {
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(
                 FiggleFonts.Standard.Render("MadLib\n" +
                  "\n" +
                 "Mania"));
 
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Press any key to enter MadLib Mania!");
             Console.ReadLine();
         }
