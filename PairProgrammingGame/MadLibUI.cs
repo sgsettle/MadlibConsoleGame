@@ -59,27 +59,21 @@ namespace PairProgrammingGame
             {
                 case "1":
                     _instructions.RunMadLibOne();
-                    // GetMenuSelection();
                     break;
                 case "2":
                     _idealPresident.MyIdealPresident();
-                    // GetMenuSelection();
                     break;
                 case "3":
                     _roadtrip.RoadTripWithFriend();
-                   // GetMenuSelection();
                     break;
                 case "4":
                     _pizzaPizza.PizzaPizza();
-                   // GetMenuSelection();
                     break;
                 case "5":
                     _firstDates.FirstDates();
-                    //GetMenuSelection();
                     break;
                 case "6":
                     _unicorns.UnicornPoops();
-                    //GetMenuSelection();
                     break;
                 case "7":
                     _isRunning = false;
@@ -97,9 +91,9 @@ namespace PairProgrammingGame
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(
-                FiggleFonts.Standard.Render("MadLib\n" +
-                 "\n" +
-                "Mania"));
+                FiggleFonts.Standard.Render("MadLib"));
+            Console.WriteLine(
+                FiggleFonts.Standard.Render("Mania"));
 
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Press any key to enter MadLib Mania!");
